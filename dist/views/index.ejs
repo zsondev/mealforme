@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>mealforme</h1>
+            <p>Turn those leftovers into something incredible</p>
+        </header>
+
+        <main>
+            <form action="/getrecipes" method="GET">
+                <div class="ingredient-list" data-ingredients>
+                    <div class="input-group">
+                        <label for="ingredientOne">Ingredient 1</label>
+                        <input type="text" name="ingredientOne" id="ingredientOne" autofocus>
+                    </div>
+                </div>
+                <button type="button" data-add-ingredient>Add Ingredient</button>
+                <button type="submit">Find Recipes</button>
+            </form>
+        </main>
+
+        <footer>
+            &copy; <a href="#">mealfor.me</a>, 2025
+        </footer>
+    </div>
+</body>
+</html>

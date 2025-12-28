@@ -1,0 +1,21 @@
+*. *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+form > * {
+    font: inherit;
+}
+
+.input-group > * {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+}
